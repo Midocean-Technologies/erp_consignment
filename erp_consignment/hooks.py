@@ -10,6 +10,15 @@ app_license = "MIT"
 # Includes in <head>
 # ------------------
 
+fixtures = [
+    {"dt": "Print Format", "filters": {"module": "ERP Consignment"}},
+    {"dt":"Custom Field", "filters": {"module":"ERP Consignment"}},
+    {"dt":"Property Setter", "filters": {"module":"ERP Consignment"}}
+    
+]
+
+after_migrate = "erp_consignment.install.after_install"
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/erp_consignment/css/erp_consignment.css"
 # app_include_js = "/assets/erp_consignment/js/erp_consignment.js"
