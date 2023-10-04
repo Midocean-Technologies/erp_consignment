@@ -20,3 +20,12 @@ class ConsignmentDelivery(Document):
 			})
 		doc.save()
 		doc.submit()
+		self.db_set("stock_entry", doc.name)
+  
+	def on_cancel(self):
+		if self.stock_entry:
+			se = frappe.get_doc('Stock Entry', self.stock_entry)
+			se.cancel()
+			self.db_set("stock_entry", "")
+
+			

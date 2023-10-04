@@ -153,6 +153,7 @@
   "select_print_heading",
   "language",
   "more_info",
+  "stock_entry",
   "is_internal_customer",
   "represents_company",
   "inter_company_reference",
@@ -1406,12 +1407,18 @@
    "label": "Consignment Warehouse",
    "options": "Warehouse",
    "reqd": 1
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry"
   }
  ],
  "icon": "fa fa-truck",
  "is_submittable": 1,
  "links": [],
- "modified": "2023-10-04 16:26:56.837338",
+ "modified": "2023-10-04 18:04:30.675438",
  "modified_by": "Administrator",
  "module": "ERP Consignment",
  "name": "Consignment Delivery",
