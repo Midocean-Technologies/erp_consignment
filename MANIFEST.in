@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erp_consignment *.css
+recursive-include erp_consignment *.csv
+recursive-include erp_consignment *.html
+recursive-include erp_consignment *.ico
+recursive-include erp_consignment *.js
+recursive-include erp_consignment *.json
+recursive-include erp_consignment *.md
+recursive-include erp_consignment *.png
+recursive-include erp_consignment *.py
+recursive-include erp_consignment *.svg
+recursive-include erp_consignment *.txt
+recursive-exclude erp_consignment *.pyc
