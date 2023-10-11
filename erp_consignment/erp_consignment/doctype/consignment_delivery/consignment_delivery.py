@@ -18,6 +18,8 @@ class ConsignmentDelivery(Document):
 				"s_warehouse":i.warehouse,
 				"t_warehouse":self.consignment_warehouse
 			})
+		doc.consignment_delivery = self.name
+		doc.customer = self.customer
 		doc.save()
 		doc.submit()
 		self.db_set("stock_entry", doc.name)

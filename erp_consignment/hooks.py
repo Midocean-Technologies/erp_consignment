@@ -18,6 +18,7 @@ fixtures = [
 ]
 
 after_migrate = "erp_consignment.install.after_install"
+after_install = "erp_consignment.install.after_install"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/erp_consignment/css/erp_consignment.css"

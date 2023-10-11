@@ -30,4 +30,24 @@ def custom_field_add():
             "insert_after": "customer_code",
         },
     )
+    create_custom_field(
+        "Stock Entry",
+        {
+            "label": _("Consignment Delivery"),
+            "fieldname": "consignment_delivery",
+            "fieldtype": "Link",
+            "options": "Consignment Delivery",
+            "insert_after": "inspection_required",
+        },
+    )
+    create_custom_field(
+        "Stock Entry",
+        {
+            "label": _("Customer"),
+            "fieldname": "customer",
+            "fieldtype": "Link",
+            "options": "Customer",
+            "insert_after": "consignment_delivery",
+        },
+    )
     
