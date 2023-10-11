@@ -35,8 +35,8 @@ def custom_field_add():
         {
             "label": _("Consignment Delivery"),
             "fieldname": "consignment_delivery",
-            "fieldtype": "Link",
-            "options": "Consignment Delivery",
+            "fieldtype": "Data",
+            # "options": "Consignment Delivery",
             "insert_after": "inspection_required",
         },
     )

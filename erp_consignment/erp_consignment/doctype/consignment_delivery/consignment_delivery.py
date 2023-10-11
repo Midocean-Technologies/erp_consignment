@@ -26,8 +26,10 @@ class ConsignmentDelivery(Document):
   
 	def on_cancel(self):
 		if self.stock_entry:
-			se = frappe.get_doc('Stock Entry', self.stock_entry)
-			se.cancel()
-			self.db_set("stock_entry", "")
+			stock_entry = frappe.get_doc("Stock Entry",self.stock_entry)
+			stock_entry.cancel()
+			stock_entry.db_set("consignment_delivery","")
+			self.db_set("stock_entry","")
+
 
 			
